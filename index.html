@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a798d8001a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>EXPENSE TRACKER</h1>
+        <div class="argent">
+          <label for="money">Please Enter Your Budget</label>
+          <input type="number" name="money" id="money-el" />
+          <button
+            type="submit"
+            class="btn-money"
+            id="btn-money"
+            onclick="addBudget()"
+          >
+            Calculates
+          </button>
+        </div>
+        <div class="depense">
+          <label for="dep">Please Enter Your Expense</label>
+          <input type="text" name="dep" class="rouge" id="amount-name" />
+          <label for="am">Please Enter Your Expense</label>
+          <input type="number" name="am" class="rouge" id="amount-price" />
+          <button
+            type="submit"
+            class="ajdepe"
+            id="add-amount"
+            onclick="addDepenses() "
+          >
+            Add Expense
+          </button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="top">
+          <div class="firstcol taille">
+            <h2>BUDGET</h2>
+           
+            <i class="fa-solid fa-money-bill-1 fa-3x"></i>
+             <h2 id="budget-el">0</h2><span class="dollar">Fcfa</span>
+          </div>
+          <div class="secondcol taille">
+            <h2>EXPENSES</h2>
+            <i class="fa-solid fa-money-check fa-3x"></i>
+             <h2 id="expenses-el">0</h2><span class="dollar">Fcfa</span>
+           
+          </div>
+          <div class="thirdcol taille">
+            <h2>BALANCE</h2>
+            <i class="fa-solid fa-dollar-sign fa-3x"></i>
+            <h2 id="balance-el">0</h2><span class="dollar">Fcfa</span>
+            
+          </div>
+        </div>
+        <div class="bottom" id="mes-depense">
+          <div class="lesdepen">
+            <h2 class="titre">Expense Title</h2>
+            <h2 class="titre">Expense Value</h2>
+            <h2 class="titre">Modifier</h2>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
