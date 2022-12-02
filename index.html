@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aid-tech | Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+                <h1 class="mt-2 text-uppercase">expense tracker</h1>
+            </div>
+            <div class="col-md-7 text-end">
+                <div class="row">
+                    <div class="col-md-auto">
+                        <div id="notif" class="text-end"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 row1">
+            <div class="col-md-5">
+                <div class="card border-success px-2 py-2">
+                    <form>
+                        <div class="mb-3">
+                            <label for="budget" class="form-label fw-bold">Please Enter Your Budget</label>
+                            <input type="number" class="form-control border-success" id="budget">
+                        </div>
+                        <button type="button" class="btn btn-outline-success" id="addBudget">Calculate</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col text-center">
+                        <h5 class="text-uppercase fw-bold">budget</h5>
+                        <i class="fa-solid fa-money-bill-1 fa-4x blue-700"></i>
+                        <h2 id="bien" class="text-success mt-2"></h2>
+                    </div>
+                    <div class="col text-center">
+                        <h5 class="text-uppercase fw-bold">exepnses</h5>
+                        <i class="fa-solid fa-credit-card fa-4x blue-700"></i>
+                        <h2 id="credit" class="text-danger mt-2"></h2>
+                    </div>
+                    <div class="col text-center">
+                        <h5 class="text-uppercase fw-bold">balance</h5>
+                        <i class="fa-solid fa-dollar-sign fa-4x blue-700"></i>
+                        <h2 id="solde" class="mt-2"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-5">
+                <div class="card border-danger px-2 py-2">
+                    <form>
+                    <input type="hidden" class="form-control border-danger" id="expenseId">
+                    <div class="mb-3">
+                        <label for="expenseName" class="form-label fw-bold">Please Enter Your Expense</label>
+                        <input type="text" class="form-control border-danger" id="expenseName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="expenseValue" class="form-label fw-bold">Please Enter Expense Amount</label>
+                        <input type="number" class="form-control border-danger" id="expenseValue">
+                    </div>
+                    <button type="button" class="btn btn-outline-danger" id="addExpense">Add expense</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <table>
+                        <tbody>
+                            <th class="col-md-4 text-center">Expense Title</th>
+                            <th class="col-md-4 text-center">Expense Value</th>
+                            <th class="col-md-4 text-center"></th>
+                        </tbody>
+                        <tbody id="content"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="budget.js"></script>
+</body>
+
+</html>
