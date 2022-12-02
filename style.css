@@ -1,142 +1,15 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e8e8e8;
+body, .btn-light, .card{
+    background: #e8e8e8 !important;
 }
-.container {
-  width: 90vw;
-  height: 100vh;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
+
+.border-success, .border-danger, .btn-outline-success, .btn-outline-danger{
+    border: 2px solid !important
 }
-.left {
-  width: 40%;
-  height: 100%;
+
+.row1 i{
+    color: #09617e;
 }
-.argent {
-  width: 90%;
-  height: 10%;
-  border: 1px solid green;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-left: 40px;
-  padding-bottom: 10px;
-}
-#money-el {
-  width: 90%;
-  height: 20px;
-  border: 1px solid green;
-}
-.btn-money {
-  color: green;
-  border: 1px solid green;
-  background-color: transparent;
-  padding: 2px;
-  cursor: pointer;
-}
-.depense {
-  width: 90%;
-  margin-top: 10%;
-  height: 20%;
-  border: 1px solid red;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-left: 40px;
-  padding-bottom: 10px;
-}
-.rouge {
-  width: 90%;
-  height: 20px;
-  border: 1px solid red;
-}
-.ajdepe {
-  color: red;
-  border: 1px solid red;
-  background-color: transparent;
-  padding: 2px;
-  cursor: pointer;
-}
-.right {
-  width: 50%;
-  height: 60vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.top {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-.bottom {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.lesdepen {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-i {
-  color: #04658e;
-}
-.icone {
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  width: 100%;
-}
-.deleted {
-  color: red;
-}
-#budget-el,
-#balance-el {
-  color: green;
-  width: 80%;
-}
-#expenses-el {
-  color: red;
-  width: 80%;
-}
-.les-red {
-  color: red;
-}
-.lesdepens {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.taille {
-  height: 80px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 30%;
-  justify-content: center;
-  align-items: center;
-}
-.dollar {
-  display: inline;
-}
-.depla {
-  position: relative;
-  right: -18%;
+
+.btn-light{
+    border: none !important;
 }
