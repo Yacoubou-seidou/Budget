@@ -26,4 +26,4 @@ View helpful summaries and charts of your spending habits on the summary page
 If you would like to contribute to the Expense Tracker website, please feel free to fork the repository and make any changes you like using HTML, CSS, and JavaScript.
 
 ##License
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](./LICENSE) licensed.
